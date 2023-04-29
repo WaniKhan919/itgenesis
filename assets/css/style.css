@@ -74,6 +74,9 @@
     background-position: center;
     filter: hue-rotate(334deg);
 }
+.home-slider-col{
+    padding: 3rem;
+}
 .banner-img img{
     z-index: 12;
     color: rgb(255, 255, 255);
@@ -336,4 +339,47 @@ h2{
 .footer-logo{
     width: 100%;
     object-fit: contain;
+}
+.work-flow-img,.about-us-img{
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width:480px){
+    .banner-content{
+        padding-top: 2px;
+        padding-right: 2px;
+    }
+    .banner-content h3{
+        font-size: 12px;
+    }
+    .banner-content p{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .home-slider-col{
+        padding: 5px;
+    }
+    .our-value div h3 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width:320px){
+    .banner-content{
+        padding-top: 2px;
+        padding-right: 2px;
+    }
+    .banner-content h3{
+        font-size: 12px;
+    }
+    .banner-content p{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .home-slider-col{
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .our-value div h3 {
+        font-size: 2.4rem;
+    }
 }
