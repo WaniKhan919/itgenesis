@@ -383,3 +383,57 @@ h2{
         font-size: 2.4rem;
     }
 }
+.about-bredcrumb .container-fluid{
+    background-image: url('../img/banner/about-bg.jpeg');
+}
+h2{
+    font-weight: 500;
+    color: #0e2b5c;
+    font-size: 2.25rem;
+    line-height: 1.2em;
+}
+h4{
+    color: #0e2b5c;
+}
+.about-bredcrumb .container-fluid p{
+    color: #0e2b5c;
+    font-size: 1rem;
+    line-height: 1.625em;
+}
+.about-us-col .card .heading-4{
+    color: #0e2b5c;
+}
+.about-us-col{
+    margin-top: 2rem;
+}
+.about-us-col .card{
+    border: 0;
+    text-align: center;
+    padding: 10%;
+    height: 100%;
+    background: #ffffff;
+    -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.about-us-col .card .img{
+    padding: 1rem;
+}
+.our-history .container-fluid{
+    background-color: #181223;
+}
+.our-history .container-fluid h2,.our-history .container-fluid p{
+    color: white;
+}
+.mission{
+    background-color: #f4f4f4 !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
