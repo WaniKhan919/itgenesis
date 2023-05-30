@@ -340,10 +340,14 @@ h2{
     width: 100%;
     object-fit: contain;
 }
-.work-flow-img,.about-us-img{
+.work-flow-img{
+    width: 886px;
+    height: 552px;
+}
+/* .about-us-img{
     width: 100%;
     object-fit: contain;
-}
+} */
 @media (max-width:480px){
     .banner-content{
         padding-top: 2px;
