@@ -2,7 +2,12 @@
     width: 154px;
     height: auto;
 }
-
+.navbar.container-fluid{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
 .nav-item .nav-link {
     text-transform: uppercase;
     color: #0e2b5c;
