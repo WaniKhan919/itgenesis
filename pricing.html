@@ -19,11 +19,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar start -->
-    <section class="navbar">
+    <section class="navbar container">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -90,25 +90,323 @@
     </section>
     <!-- Bredcrumb End -->
     <!-- Pricing Section Start -->
-    
-    <div class="row pricing-nav d-grid justify-content-center">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+    <section class="container pricing-nav d-grid justify-content-center">
+        <div class="row">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item first-child" role="presentation">
+                    <button class="nav-link active" id="pills-webHosting-tab" data-bs-toggle="pill" data-bs-target="#pills-webHosting" type="button" role="tab" aria-controls="pills-webHosting" aria-selected="true">Web Hosting</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-webDevelopment-tab" data-bs-toggle="pill" data-bs-target="#pills-webDevelopment" type="button" role="tab" aria-controls="pills-webDevelopment" aria-selected="false">Web Development</button>
+                </li>
+                <li class="nav-item last-child" role="presentation">
+                    <button class="nav-link" id="pills-seoPackages-tab" data-bs-toggle="pill" data-bs-target="#pills-seoPackages" type="button" role="tab" aria-controls="pills-seoPackages" aria-selected="false">SEO Packages</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-webHosting" role="tabpanel" aria-labelledby="pills-webHosting-tab">
+                    <div class="row pricing-row">
+                        <div class="col-12 col-md-4 d-grid" data-aos="fade-right" data-aos-offset="300">
+                            <div class="card starter-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Starter Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <a class="btn btn-primary m-2" href="#">Contact us</a>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-grid" data-aos="fade-right" data-aos-offset="300">
+                            <div class="card basic-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Basic Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR30,000</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <button class="btn btn-info m-2">Contact us</button>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-grid" data-aos="fade-right" data-aos-offset="300">
+                            <div class="card starter-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Business Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <a class="btn btn-primary m-2" href="#">Contact us</a>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-webDevelopment" role="tabpanel" aria-labelledby="pills-webDevelopment-tab">
+                    <div class="row pricing-row">
+                        <div class="col-12 col-md-4 d-grid">
+                            <div class="card starter-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Starter Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <a class="btn btn-primary m-2" href="#">Contact us</a>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>Designed Pages: 5-7</li>
+                                            <li>Mobile & Tab Responsive</li>
+                                            <li>Initial Design Concept:1</li>
+                                            <li>Website Contact Form:1</li>
+                                            <li>Social Media Integration</li>
+                                            <li>Design Revision :1</li>
+                                            <li>Less Load time</li>
+                                            <li>X</li>
+                                            <li>X</li>
+                                            <li>X</li>
+                                            <li>X</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-grid">
+                            <div class="card basic-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Basic Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <button class="btn btn-info m-2">Contact us</button>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-grid">
+                            <div class="card starter-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Business Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <a class="btn btn-primary m-2" href="#">Contact us</a>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-seoPackages" role="tabpanel" aria-labelledby="pills-seoPackages-tab">
+                    <div class="row pricing-row">
+                        <div class="col-12 col-md-4 d-grid">
+                            <div class="card starter-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Starter Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <a class="btn btn-primary m-2" href="#">Contact us</a>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-grid">
+                            <div class="card basic-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Basic Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <button class="btn btn-info m-2">Contact us</button>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 d-grid">
+                            <div class="card starter-plan">
+                                <div class="card-body">
+                                    <h4 class="card-title">Business Plan</h4>
+                                    <p class="card-text">Designed for businesses with basic IT requirements</p>
+                                    <div class="d-flex">
+                                        <h2>PKR4,500</h2>
+                                        <span class="p-2">/ year</span>
+                                    </div>
+                                    <div class="d-grid price-column">
+                                        <span class="m-2">Pricing includes coverage for users</span>
+                                        <a class="btn btn-primary m-2" href="#">Contact us</a>
+                                    </div>
+                                    <div>
+                                        <span class="mt-3">All careBasic services include:</span>
+                                        <ul class="package-listing">
+                                            <li>1 GB SSD Disk Space</li>
+                                            <li>Unlimited Bandwidth</li>
+                                            <li>FREE SSL</li>
+                                            <li>1 Free Domain [.com ]</li>
+                                            <li>0 Addon Domains</li>
+                                            <li>Unlimited Email Addresses</li>
+                                            <li>2 Databases</li>
+                                            <li>cPanel Linux</li>
+                                            <li>WordPress / Joomla Quick Install</li>
+                                            <li>Technical Specification</li>
+                                            <li>24/7 Support | 99.99% Uptime</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
     <!-- Pricing Section End -->
     <!-- Contact us section start -->
     <section class="contact-us">
@@ -220,5 +518,9 @@
     </footer>
     <!-- Footer section end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
