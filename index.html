@@ -83,7 +83,7 @@
     <!-- Home Slider Start -->
     <section class="home-slider mb-2">
         <div class="container-fluid">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -271,13 +271,13 @@
         <div class="container">
             <h2 class="text-center">Our Partners</h2>
             <div class="row mt-4 mb-4">
-                <div class="col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-offset="300">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-offset="300">
                     <img src="assets/img/partner/img1.png" alt="" class="partner-img">
                 </div>
-                <div class="col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-down" data-aos-offset="300">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-down" data-aos-offset="300">
                     <img src="assets/img/partner/img2.png" alt="" class="partner-img">
                 </div>
-                <div class="col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-offset="300">
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-offset="300">
                     <img src="assets/img/partner/img3.png" alt="" class="partner-img">
                 </div>
             </div>
@@ -684,5 +684,16 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        $(document).ready(function(){
+          // Set the interval time in milliseconds
+          var interval = 3000; // 3 seconds
+        
+          // Automatically move to the next slide
+          setInterval(function(){
+            $('.carousel').carousel('next');
+          }, interval);
+        });
+        </script>
   </body>
 </html>
